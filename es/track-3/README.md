@@ -19,6 +19,10 @@ Clona este repositorio, abre [Antigravity](https://antigravity.google) y crea tu
 
 <sub>️ <a href="https://google.github.io/agents-cli/guide/getting-started/">agents-cli</a> · 🤖 <a href="https://google.github.io/adk-docs/">ADK</a></sub>
 
+<br/>
+
+**🌎 Idioma:** 🇪🇸 Español · [🇧🇷 Português](../../pt-br/track-3/README.md) · [⬅️ Inicio](../../README.md)
+
 </div>
 
 ---
@@ -150,7 +154,7 @@ Una **skill** es un conjunto de instrucciones que se carga automáticamente cuan
 
 ```bash
 git clone https://github.com/miohana/build-with-gemini
-cd build-with-gemini/track-3
+cd build-with-gemini/es/track-3
 agy
 ```
 

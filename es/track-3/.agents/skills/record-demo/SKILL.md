@@ -44,7 +44,7 @@ Desde la raíz del proyecto:
 
 ```bash
 # Frontend personalizado (URL predeterminada), prompts adaptados a este agente:
-node .agents/skills_es/record-demo/record-agent.js \
+node .agents/skills/record-demo/record-agent.js \
   -q "Primer prompt de demostración" \
   -q "Segundo prompt de demostración" \
   -o agent_demo.webm
@@ -52,7 +52,7 @@ node .agents/skills_es/record-demo/record-agent.js \
 
 ```bash
 # Dev UI de ADK en su lugar, por nombre de app:
-node .agents/skills_es/record-demo/record-agent.js \
+node .agents/skills/record-demo/record-agent.js \
   --app mi_agente \
   -q "Primer prompt de demostración" \
   -q "Segundo prompt de demostración"
@@ -60,7 +60,7 @@ node .agents/skills_es/record-demo/record-agent.js \
 
 ```bash
 # Una demo con generación de imágenes: espera más tiempo y acelera el clip:
-node .agents/skills_es/record-demo/record-agent.js \
+node .agents/skills/record-demo/record-agent.js \
   -q "¿Qué hay en inventario?" \
   -q "Genera una imagen del primer producto" \
   --wait 30000 --speed 1.5
@@ -97,14 +97,14 @@ En la imagen del lab, estos componentes deberían estar **preinstalados**. Si fa
 | `--no-frame` | Desactivar el marco de marca | marco activado |
 | `--headed` | Mostrar la ventana gráfica del navegador | headless (oculto) |
 
-Ejecuta `node .agents/skills_es/record-demo/record-agent.js --help` para ver la misma lista.
+Ejecuta `node .agents/skills/record-demo/record-agent.js --help` para ver la misma lista.
 
 ## Música de fondo (Lyria) — solo cuando el usuario la solicite
 
 La música es **opcional**. Agrégala solo cuando la solicitud del usuario lo amerite — por ejemplo: "agrega música lo-fi relajante de fondo", "ponle banda sonora", "dale un estilo animado". Cuando lo hagan, traduce su deseo en un **prompt para Lyria** y pasa `--music`:
 
 ```bash
-node .agents/skills_es/record-demo/record-agent.js \
+node .agents/skills/record-demo/record-agent.js \
   -q "¿Qué hay en inventario?" \
   -q "Genera una imagen del primer producto" \
   --wait 30000 --speed 1.5 \

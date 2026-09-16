@@ -27,7 +27,7 @@ Ejecuta todo desde la **raíz del proyecto** (donde residen `app/`, `project_bri
 ## Paso 1 — Preparación (instalar gh, stage, escanear). Sin commit, sin push.
 
 ```bash
-bash .agents/skills_es/publish-to-github/publish.sh prep
+bash .agents/skills/publish-to-github/publish.sh prep
 export PATH="$HOME/.local/bin:$PATH"   # en caso de que prep acabe de instalar gh allí
 ```
 
@@ -53,7 +53,7 @@ El comando **se bloquea mientras espera la autorización**, así que proporciona
 ## Paso 3 — Commit (autor = su identidad de GitHub)
 
 ```bash
-bash .agents/skills_es/publish-to-github/publish.sh commit
+bash .agents/skills/publish-to-github/publish.sh commit
 ```
 
 Esto establece el autor del commit a partir de su inicio de sesión en GitHub (utilizando el correo electrónico de preservación de privacidad `<login>@users.noreply.github.com`) y realiza el commit del proyecto preparado en stage.
@@ -63,7 +63,7 @@ Esto establece el autor del commit a partir de su inicio de sesión en GitHub (u
 Elige un nombre de repositorio. Obtén el nombre predeterminado con:
 
 ```bash
-bash .agents/skills_es/publish-to-github/publish.sh reponame
+bash .agents/skills/publish-to-github/publish.sh reponame
 ```
 
 Esto imprimirá `buildwithgemini-<nombre-carpeta-proyecto>` (en formato slug) — la convención de nomenclatura que el personal del registro busca al canjear el swag. Propón este nombre primero. El participante puede cambiarlo, pero si lo hace, indícale que conserve el prefijo `buildwithgemini-` para que sea reconocido en el mostrador de registro.
@@ -85,7 +85,7 @@ gh repo view --json url -q .url    # imprime la URL del repositorio
 ## Paso 5 — Entregar el formulario de envío prellenado
 
 ```bash
-bash .agents/skills_es/publish-to-github/publish.sh formlink "<repo_url>"
+bash .agents/skills/publish-to-github/publish.sh formlink "<repo_url>"
 ```
 
 Esto imprime un enlace de Google Forms con la **URL del repositorio** (y, si están presentes en `project_brief.md`, el **título** y la **descripción del proyecto**) ya completados.
